@@ -1,0 +1,29 @@
+*{
+	padding: 10;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h2{
+	font-size: 40px;
+}
+/*Effect of tables on all 3 pages*/
+table tr td a{
+	text-transform:uppercase;
+	font-size:20px;
+	overflow:hidden;
+	transition:0.2s;
+	color:#1ed903;
+}
+table tr td a:hover{
+	 color:#255784; 
+	 background:#1ed903;
+	 box-shadow:0 0 10px #1ed903,0 0 40px #1ed903,0 0 80px #1ed903; 
+	 transition-delay:0.25s; 
+	
+ } 
+@media only screen and (orientation: portrait){
+	*{
+		letter-spacing: 1px;
+	}
+}

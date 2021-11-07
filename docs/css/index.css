@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+@media (min-width: 992px){
+    .navbar li {
+        margin-left : 1em;
+        margin-right : 1em;
+    }
+}
+/*background effect on all 3 function links*/
+.bg{
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+	background-image: url('../img/background.jpeg');
+}
+
+  
+.vertical-center {
+    margin-top: 0;
+    position: absolute;
+    top: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*Effect for all h1 tags*/
+h1{
+    background-color:#1e272e;
+    cursor: pointer;
+    color: #ffd32a;
+    text-align: center;
+    height: 70px;
+    margin-bottom: 0 !important;
+    border: 0 !important;
+    height: auto;
+    transform: 1s;
+    font-family: 'Suez One', serif;
+}
+
+h1:hover{
+    background-color: #ffd32a;
+    color:black;
+    transition-duration: 1s;
+
+}
+/*Effect for Navbar*/
+.navbar{
+    margin-bottom: 0 !important;
+    border: 0 !important;
+}
+/*Neon Energy Hover button effect on all 3 functions links*/
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	
+}
+ *
+ {
+	 margin:0;
+	 padding : 0;
+	 box-sizing : border-box;
+	 font-family: 'Poppins',sans-serif;
+ }
+ .center
+ {
+	 display:flex;
+	 justify-content: center;
+	 align-items:center;
+	 flex-wrap:wrap;
+	 
+ }
+ .center a{
+	 position:relative;
+	 display:inline-block;
+	 padding:15px 30px;
+	 border:2px solid #00ff00;
+	 margin:40px;
+	 text-transform:uppercase;
+	 font-weight:600;
+	 text-decoration:none;
+	 letter-spacing:2px;
+	 color:#ffffff;
+	 -webkit-box-reflect: below 0px linear-gradient(transparent,#000200);
+	 transition:0.5s;
+	 transition-delay:0s;
+ }
+ .center a span{
+	 position:relative;
+	 z-index:100;
+ }
+ 
+ .center a:hover{
+	 transition-delay:1.5s;
+	 color:#000000;
+	 box-shadow:0 0 10px #00ff00,
+	            0 0 20px #00ff00,
+				0 0 40px #00ff00,
+	            0 0 80px #00ff00,
+	            0 0 160px #00ff00;
+ }
+ .center a:nth-child(3){
+	 filter:hue-rotate(80deg);
+ }
+ .center a::before{
+	 content:'';
+	 position:absolute;
+	 left : -20px;
+	 top : 50%;
+	 transform:translateY(-50%);
+	 width:20px;
+	 height:2px;
+	 background:#00ff00;
+	 box-shadow:5px -8px 0 #00ff00,5px 8px 0 #00ff00;
+	 transition:width 0.5s,left 0.5s,height 0.5s,box-shadow 0.5s;
+	 transition-delay:1s,0.5s,0s,0s;
+ }
+ .center a:hover::before{
+	 width:60%;
+	 height:100%;
+	 left:-2px;
+	 box-shadow:5px 0 0 #00ff00,5px 0 0 #00ff00;
+	 transition-delay:0s,0.5s,1s,1s;
+ }
+ 
+  .center a::after{
+	 content:'';
+	 position:absolute;
+	 right : -20px;
+	 top : 50%;
+	 transform:translateY(-50%);
+	 width:20px;
+	 height:2px;
+	 background:#00ff00;
+	 box-shadow:-5px -8px 0 #00ff00,-5px 8px 0 #00ff00;
+	 transition:width 0.5s,left 0.5s,height 0.5s,box-shadow 0.5s;
+	 transition-delay:1s,0.5s,0s,0s;
+ }
+ .center a:hover::after{
+	 width:60%;
+	 height:100%;
+	 right:-2px;
+	 box-shadow:-5px 0 0 #00ff00,-5px 0 0 #00ff00;
+	 transition-delay:0s,0.5s,1s,1s;
+ }
+
+ /*Effect on footer*/
+ #footer {
+    
+    padding:500px;
+    color: red;
+    height: auto;
+ }
+
+ #container #header{
+    
+    color: red;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 35px;
+ }
+ /*Multiple blur color effect at the background of social media icons*/
+ section {
+	 position:relative;
+	 width:100%;
+	 height:30vh;
+	 display:flex;
+	 justify-content: center;
+	 align-items:center;
+	 background:linear-gradient(to bottom,#ff4f8b,#dff1ff);
+ }
+ section .color{
+	 position:absolute;
+	 filter:blur(150px);
+ }
+ section .color:nth-child(1){
+	 background:#ff359b;
+	 width:600px;
+	 height:100px;
+	 top:-350px;
+ }
+ section .color:nth-child(2){
+	 background:#00d2ff;
+	 width:500px;
+	 height:300px;
+	 bottom:-150px;
+	 left:100px;
+ }
+  section .color:nth-child(3){
+	 background:#fffd87;
+	 width:300px;
+	 height:300px;
+	 bottom:50px;
+	 right:0px;
+ }
+  section::before{
+	 content:'';
+	 position:absolute;
+	 bottom:0;
+	 width:100%;
+	 height:50%;
+	 z-index:1;
+	 border-top:1px solid rgba(255,255,255,0.5);
+	 backdrop-filter:blur(5px);
+ }
+ /*Glassmorphism effect on social media icons,logo at top left and navbar icons at top right*/
+ul{
+	position:relative;
+	display:flex;
+	z-index:2;
+}
+ul li{
+	position:relative;
+	list-style:none;
+	margin:10px;
+}
+ul li a{
+	position:relative;
+	width:80px;
+	height:80px;
+	display:inline-block;
+	border-radius:10px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-decoration:none;
+	color:#000000;
+	font-size:2em;
+	border:1px solid rgba(255,255,255,0.4);
+	border-right:1px solid rgba(255,255,255,0.2);
+	border-bottom:1px solid rgba(255,255,255,0.2);
+	box-shadow:0 5px 45px rgba(0,0,0,0.1);
+	backdrop-filter:blur(2px);
+	transition:0.5s;
+	overflow:hidden;
+}
+ul li a:hover{
+	transform:translateY(-20px);
+}
+ul li a::before{
+	content:'';
+	position:absolute;
+	top :0;
+	left:0;
+	
+	width:50px;
+	height:100%;
+	background:rgba(255,255,255,0.5);
+	transform:skewX(45deg) translateX(150px);
+	transition:0.5s;
+}
+ul li a:hover::before{
+	transform:skewX(45deg) translateX(-150px);
+}
+/*Effect on proceed to transfer,Responsive navigation,back button on user_info page and history button*/
+
+button{
+	display:inline-block;
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:18px;
+	letter-spacing:2px;
+	border-radius:40px;
+	background:linear-gradient(90deg,#755bea,#ff72c0);
+}
+
+/* Creative Page Scroll Progress Bar */
+::-webkit-Scrollbar{
+	width:0;
+}
+#scrollpath{
+	position:fixed;
+	top:0;
+	right:0;
+	width:10px;
+	height:100%;
+	background:rgba(255,255,255,0.05);
+}
+#progressbar{
+	position:fixed;
+	top:0;
+	right:0;
+	width:10px;
+	height:100%;
+	background:linear-gradient(to top,#008aff,#00ffe7);
+	animation:animate 5s linear infinite;
+}
+@keyframes animate
+{
+	0%,100%
+	{
+		filter:hue-rotate(0deg);
+	}
+	50%
+	{
+		filter:hue-rotate(360deg);
+	}
+}
+/*CSS code for user_info page*/
+.card{
+	position:relative;
+	display:flex;
+	flex-direction : column;
+}
