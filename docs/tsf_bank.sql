@@ -68,7 +68,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `contact`, `balance`, `occupation`, `bloodgroup`, `maritialstatus`, `country`, `state`, `city`) VALUES
+INSERT INTO `users` (`id`, `name`, `email`, `contact`, `balance`, `occupation`, `bloodgroup`, `maritalstatus`, `country`, `state`, `city`) VALUES
 (1, 'Shubham', 'shubham@gmail.com', 1234567890, 71000, 'Software Designer', 'A+', 'Unmarried', 'India', 'Maharashtra', 'Mumbai'),
 (2, 'Maari', 'maari@gmail.com', 2147483647, 20000, 'Game Developer', 'AB+', 'Married', 'India', 'Maharashtra', 'Pune'),
 (3, 'Kevin', 'kevin@gmail.com', 2147483647, 100000, 'Web Developer', 'O+', 'Married', 'India', 'Maharashtra', 'Mumbai'),
