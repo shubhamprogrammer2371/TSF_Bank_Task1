@@ -4,7 +4,7 @@
  <!--- backkground and all 3 functions at middle of page --->
   <div class="bg" >
     <div class="center">
-        <a href="all_users.php" style="color:#fa4f16;"><span>View All Users</span></a>
+        <a href="all_users.php" style="color:#fa4f16;"><span>View All Customers</span></a>
         <a href="transfer_money.php" style="color:#fa4f16;"><span>Trasnfer Money</span></a>
         <a href="transaction_history.php" style="color:#00158d;"><span>View Transaction History</span></a>
     </div>
