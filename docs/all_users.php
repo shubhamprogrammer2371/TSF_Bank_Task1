@@ -7,7 +7,7 @@
 <?php include('nav.php'); ?>
 
 <div class="container">
-        <h1>User Details</h1>
+        <h1>Customer Details</h1>
         <br>
             <div class="row">
                 <div class="col">
